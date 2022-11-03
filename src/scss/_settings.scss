@@ -33,10 +33,19 @@ button, input {
     cursor: pointer;
 }
 
-#particle-js {
+#particles-js {
     width: 100vw;
     height: 100vh;
     position: absolute;
+    z-index: 20;
     top: 0;
     left: 0;
+    overflow: hidden;
+}
+
+
+
+.container {
+    max-width: 89.5rem;
+    margin: auto;
 }

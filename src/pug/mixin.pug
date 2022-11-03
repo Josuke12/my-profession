@@ -1,0 +1,9 @@
+mixin createTitle(title, subTitle, isMain = false)
+	if(!isMain)
+		.title
+			p #{subTitle}
+			h2 #{title}
+	else
+		.title.tl-right
+			p #{subTitle}
+			h1 #{title}

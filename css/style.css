@@ -30,10 +30,106 @@ button, input {
   cursor: pointer;
 }
 
+#particles-js {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 89.5rem;
+  margin: auto;
+}
+
 html, body {
   font-size: 62.5%;
-  font-family: sans-serif;
+  font-family: "Jost", sans-serif;
   font-weight: normal;
+  color: #fff;
+}
+
+h1, h2:not(.page-title) {
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-block {
+  margin-top: 3.8rem;
+}
+.main-block h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: 500;
+}
+.main-block__text > p {
+  margin-top: 4.4rem;
+  font-size: 1.6rem;
+  line-height: 117%;
+  max-width: 39.7rem;
+}
+.main-block__bottom {
+  margin-top: 2.8rem;
+  display: flex;
+  align-items: center;
+}
+.main-block__bottom img {
+  max-width: 31.8rem;
+  max-height: 34.8rem;
+  margin-right: 11.3rem;
+}
+
+@media (max-width: 840px) {
+  .main-block__bottom {
+    flex-direction: column-reverse;
+  }
+  .main-block__bottom img {
+    margin-right: 0;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 430px) {
+  .main-block .title {
+    padding-right: 1rem;
+  }
+  .main-block .title h1 {
+    font-size: 2.7rem;
+  }
+  .main-block .title p {
+    font-size: 1rem;
+  }
+  .main-block__text > p {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 320px) {
+  .main-block .title.tl-right {
+    align-items: center;
+  }
+  .main-block .title.tl-right h1 {
+    font-size: 2.4rem;
+  }
+}
+.title.tl-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.title h1, .title h2 {
+  display: inline;
+  text-transform: uppercase;
+  line-height: 75%;
+  border-bottom: 0.1rem solid #fff;
+  padding-bottom: 1rem;
+}
+.title h1 {
+  font-size: 3.6rem;
+}
+.title p {
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */
