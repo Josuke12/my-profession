@@ -1,0 +1,14 @@
+{
+  "name": "my-profession",
+  "version": "1.0.0",
+  "description": "Проект для олимпиады",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrey Sidelnik <a.sidelnik22@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "pug": "^3.0.2"
+  }
+}
