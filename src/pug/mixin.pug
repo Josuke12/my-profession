@@ -7,3 +7,14 @@ mixin createTitle(title, subTitle, isMain = false)
 		.title.tl-right
 			p #{subTitle}
 			h1 #{title}
+
+mixin line
+	.line
+
+mixin card(title, content, img)
+	.card
+		.card__front
+			img(src=img, alt=title)
+			span #{title}
+		.card__back
+			span #{content}

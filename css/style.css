@@ -6,6 +6,7 @@
 
 html, body {
   background: #1E1E1E;
+  overflow-x: hidden;
 }
 
 img {
@@ -41,6 +42,8 @@ button, input {
 }
 
 .container {
+  position: relative;
+  z-index: 100;
   max-width: 89.5rem;
   margin: auto;
 }
@@ -122,14 +125,132 @@ h1, h2:not(.page-title) {
   text-transform: uppercase;
   line-height: 75%;
   border-bottom: 0.1rem solid #fff;
-  padding-bottom: 1rem;
 }
 .title h1 {
   font-size: 3.6rem;
+  padding-bottom: 1rem;
+}
+.title h2 {
+  font-size: 3.2rem;
 }
 .title p {
   font-size: 1.6rem;
   font-weight: 500;
+}
+
+@media (max-width: 365px) {
+  .title h2 {
+    font-size: 2.4rem;
+  }
+  .title p {
+    font-size: 1rem !important;
+  }
+}
+@media (max-width: 320px) {
+  .title p {
+    text-align: center;
+  }
+}
+.line {
+  max-width: 73.1rem;
+  height: 0.1rem;
+  background: #fff;
+  margin: 3.9rem auto 0;
+}
+
+.about-block__text p {
+  margin-top: 4.6rem;
+  font-size: 1.6rem;
+  line-height: 117%;
+  max-width: 49.6rem;
+}
+.about-block__bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4.5rem;
+}
+.about-block__cards {
+  margin-top: 4.5rem;
+}
+
+@media (max-width: 905px) {
+  .about-block__bottom {
+    display: block;
+  }
+  .about-block__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-block__text > p {
+    padding: 0 1rem;
+  }
+  .about-block__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.card {
+  overflow: hidden;
+  max-width: 30.3rem;
+  height: 15.6rem;
+  width: 100%;
+  position: relative;
+  perspective: 100rem;
+}
+.card img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.card__front {
+  box-shadow: 0px 4px 4px rgba(148, 134, 134, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card__front span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54));
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.card__back {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.card__front, .card__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: 1s;
+  backface-visibility: hidden;
+}
+.card__back {
+  background: #1E1E1E;
+  transform: rotateY(180deg);
+}
+.card:hover .card__front {
+  transform: rotateY(180deg);
+}
+.card:hover .card__back {
+  transform: rotateY(360deg);
+}
+.card:not(:last-child) {
+  margin-bottom: 2.3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

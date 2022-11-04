@@ -1,0 +1,42 @@
+.about-block {
+	&__text {
+		p {
+			margin-top: 4.6rem;
+			font-size: 1.6rem;
+			line-height: 117%;
+			max-width: 49.6rem;
+		}
+	}
+
+	&__bottom {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 4.5rem;
+	}
+
+	&__cards {
+		margin-top: 4.5rem;
+	}
+}
+
+@media (max-width: 905px) {
+	.about-block {
+		&__bottom {
+			display: block;
+		}
+		&__text {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			> p {
+				padding: 0 1rem;
+			}
+		}
+		&__cards {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+}
