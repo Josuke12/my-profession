@@ -1,0 +1,47 @@
+.etaps-block {
+	&__bottom {
+		margin-top: 2.9rem;
+		display: flex;
+		align-items: stretch;
+	}
+	&__text {
+		> p {
+			margin-top: 4.6rem;
+			line-height: 117%;
+			font-size: 1.6rem;
+			max-width: 44.852rem;
+		}
+		margin-right: 7.034rem;
+	}
+	&__timeline img {
+		max-width: 37.614rem;
+		max-height: 36.6rem;
+	}	
+}
+
+@media (max-width: 905px) {
+	.etaps-block {
+		&__bottom {
+			flex-direction: column;
+			align-items: center;
+		}
+		&__text {
+			margin-right: 0;
+			margin-bottom: 2rem;
+			> p {
+				padding: 0 1rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.etaps-block {
+		&__text {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}

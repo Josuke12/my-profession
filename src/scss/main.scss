@@ -1,13 +1,19 @@
 // Главный scss файл
 // Подключает все сторонние scss файлы
 
+
+// Файлы настроек
 @import '_settings';
 @import '_fonts';
 
-// Подключение компонент
+// Глобальные компоненты
+@import 'components/title';		// 	Загаловки и подзагаловки
+@import 'components/line';		// 	Горизонтальная линия
+@import 'components/card'; 		// 	3D Карточка
 
-@import 'components/main-block';
-@import 'components/title';
-@import 'components/line';
-@import 'components/about-block';
-@import 'components/card';
+
+// Локальные компоненты
+
+@import 'components/main-block';	// Главный блок
+@import 'components/about-block';	// Блок об ответвлениях
+@import 'components/etaps-block';	// Блок этапов
