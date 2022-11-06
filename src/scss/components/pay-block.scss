@@ -1,0 +1,15 @@
+.pay-block {
+	.title {
+		margin: 2.9rem 0;
+	}
+}
+
+@media(max-width: 905px) {
+	.pay-block {
+		.title {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+	}
+}
