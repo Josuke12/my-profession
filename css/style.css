@@ -302,5 +302,12 @@ h1, h2:not(.page-title) {
     flex-direction: column;
   }
 }
+.copyright {
+  margin: 16.6rem 0 4rem;
+}
+.copyright p {
+  font-size: 1.6rem;
+  text-align: center;
+}
 
 /*# sourceMappingURL=style.css.map */
