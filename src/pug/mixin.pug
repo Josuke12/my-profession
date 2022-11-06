@@ -1,6 +1,6 @@
 mixin createTitle(title, subTitle, isMain = false)
 	if(!isMain)
-		.title
+		.title.wow.fadeInLeft(data-wow-duration="1s")
 			p #{subTitle}
 			h2 #{title}
 	else
@@ -9,10 +9,10 @@ mixin createTitle(title, subTitle, isMain = false)
 			h1 #{title}
 
 mixin line
-	.line
+	.line.wow.fadeInLeft(data-wow-duration="2s")
 
 mixin card(title, content, img)
-	.card
+	.card.wow.fadeInRight(data-wow-duration="1s")
 		.card__front
 			img(src=img, alt=title)
 			span #{title}

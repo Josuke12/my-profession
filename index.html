@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&amp;family=Montserrat:wght@700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -15,7 +16,7 @@
     <div id="wrap">
       <main>
         <div class="container">
-          <section class="main-block">
+          <section class="main-block wow fadeInDown" data-wow-duration="1s">
             <div class="main-block__top">
               <h2 class="page-title">Моя профессия — Мой выбор!</h2>
             </div>
@@ -30,21 +31,21 @@
             </div>
           </section>
           <section class="about-block">
-                      <div class="line"></div>
+                      <div class="line wow fadeInLeft" data-wow-duration="2s"></div>
             <div class="about-block__bottom">
               <div class="about-block__text">
-                          <div class="title">
+                          <div class="title wow fadeInLeft" data-wow-duration="1s">
                             <p>Ответвления в веб-разработке</p>
                             <h2>Front &amp; Back -end</h2>
                           </div>
-                <p>Когда говорят “веб-разработчик”, как правило, имеют в виду фронтендера, который разбирается в бэкенде. Да, конечно, большая часть работы — это фронтенд, то есть всё, что видит и с чем взаимодействует пользователь. Но современному веб-разработчику всё чаще приходится разрабатывать весь бэкенд или какие-то его части на Node.js</p>
+                <p class="wow fadeInLeft" data-wow-duration="1s">Когда говорят “веб-разработчик”, как правило, имеют в виду фронтендера, который разбирается в бэкенде. Да, конечно, большая часть работы — это фронтенд, то есть всё, что видит и с чем взаимодействует пользователь. Но современному веб-разработчику всё чаще приходится разрабатывать весь бэкенд или какие-то его части на Node.js</p>
               </div>
               <div class="about-block__cards">
-                          <div class="card">
+                          <div class="card wow fadeInRight" data-wow-duration="1s">
                             <div class="card__front"><img src="img/front.jpg" alt="Front-end"><span>Front-end</span></div>
                             <div class="card__back"><span>Front-end разработчик создает видимую для пользователя часть веб-страницы и его главная задача – точно передать в верстке то, что создал дизайнер, а также реализовать пользовательскую логику.</span></div>
                           </div>
-                          <div class="card">
+                          <div class="card wow fadeInRight" data-wow-duration="1s">
                             <div class="card__front"><img src="img/back.jpg" alt="Back-end"><span>Back-end</span></div>
                             <div class="card__back"><span>Back-end разработчик — программист, который пишет серверный код, отвечает за реакцию ресурса на действия пользователя и выдачу информации.</span></div>
                           </div>
@@ -52,32 +53,34 @@
             </div>
           </section>
           <section class="etaps-block">
-                      <div class="line"></div>
+                      <div class="line wow fadeInLeft" data-wow-duration="2s"></div>
             <div class="etaps-block__bottom">
               <div class="etaps-block__text">
-                          <div class="title">
+                          <div class="title wow fadeInLeft" data-wow-duration="1s">
                             <p>Стадии работы над проектом</p>
                             <h2>Этапы работы</h2>
                           </div>
-                <p>Представим себе, что нам нужно запустить онлайн-магазин. Сначала разработчик получает задачу и оценивает сроки ее выполнения. Здесь он может обсуждать решение с техническим директором или с тимлидом. Если сроки всех устраивают, их фиксируют в трекере задач. Например, в Trello, Яндекс.Трекере или YouTrack.</p>
+                <p class="wow fadeInLeft" data-wow-duration="1s">Представим себе, что нам нужно запустить онлайн-магазин. Сначала разработчик получает задачу и оценивает сроки ее выполнения. Здесь он может обсуждать решение с техническим директором или с тимлидом. Если сроки всех устраивают, их фиксируют в трекере задач. Например, в Trello, Яндекс.Трекере или YouTrack.</p>
               </div>
-              <div class="etaps-block__timeline"><img src="img/timeline.svg" alt=""></div>
+              <div class="etaps-block__timeline wow fadeInRight" data-wow-duration="1s"><img src="img/timeline.svg" alt=""></div>
             </div>
           </section>
           <section class="pay-block">
-                      <div class="line"></div>
-                      <div class="title">
+                      <div class="line wow fadeInLeft" data-wow-duration="2s"></div>
+                      <div class="title wow fadeInLeft" data-wow-duration="1s">
                         <p>В зависимости от опыта</p>
                         <h2>Зарплаты</h2>
                       </div>
-            <canvas id="pay-chart" width="772px" height="362px"></canvas>
+            <canvas class="wow fadeInUp" id="pay-chart" width="772px" height="362px" data-wow-duration="1s"></canvas>
           </section>
-          <section class="copyright">
+          <section class="copyright wow fadeInUp" data-wow-duration="1s">
             <p>Сайт создан студентом  ГБПОУ РМ "Зубово-Полянский педагогический колледж" Сидельником Андреем Александровичем для Всероссийский заочный конкурс творческих проектов «Мир IT», проект 1. Web-разработчик. Дата 06.11.2022</p>
           </section>
         </div>
       </main>
     </div>
+    <script src="js/vendor/wow.min.js" defer></script>
+    <script src="js/wow.js" defer></script>
     <script src="js/vendor/particles.min.js" defer></script>
     <script src="js/vendor/chart.min.js" defer></script>
     <script src="js/particles.js" defer></script>
