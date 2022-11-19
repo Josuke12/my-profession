@@ -310,4 +310,56 @@ h1, h2:not(.page-title) {
   text-align: center;
 }
 
+.etaps-block__timeline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 37.6rem;
+  width: 100%;
+}
+.etaps-block__timeline .timeline {
+  height: 34.3rem;
+  width: 0.1rem;
+  background-color: #fff;
+}
+.etaps-block__timeline .timeline__cyrcle {
+  margin-left: -0.664rem;
+  width: 1.427rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  background: #fff;
+  transition: 1s;
+}
+.etaps-block__timeline .timeline__cyrcle span {
+  position: absolute;
+  font-size: 1.6rem;
+  white-space: nowrap;
+  margin-top: -0.6rem;
+  transition: 1s;
+}
+.etaps-block__timeline .timeline__cyrcle:nth-child(odd) span {
+  margin-left: -14rem;
+  width: 15%;
+  text-align: right;
+}
+.etaps-block__timeline .timeline__cyrcle:nth-child(even) span {
+  margin-left: 1.8rem;
+}
+.etaps-block__timeline .timeline__cyrcle:not(:last-child) {
+  margin-bottom: 3.5rem;
+}
+.etaps-block__timeline .timeline__cyrcle:hover {
+  background: yellow;
+}
+.etaps-block__timeline .timeline__cyrcle:hover span {
+  font-size: 1.7rem;
+  color: yellow;
+}
+
+@media (max-width: 430px) {
+  .etaps-block__timeline {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

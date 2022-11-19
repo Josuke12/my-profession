@@ -1,3 +1,4 @@
+- const timeline = ['Изучить задачу', 'Выбрать решение', 'Написать код', 'Провести код-ревью', 'Доработать код', 'Протестировать', 'Исправить ошибки', 'Развернуть код на сервере'];
 
 section.etaps-block
 	+line
@@ -6,5 +7,9 @@ section.etaps-block
 			+createTitle('Этапы работы', 'Стадии работы над проектом')
 			p(class="wow fadeInLeft", data-wow-duration="1s").
 				Представим себе, что нам нужно запустить онлайн-магазин. Сначала разработчик получает задачу и оценивает сроки ее выполнения. Здесь он может обсуждать решение с техническим директором или с тимлидом. Если сроки всех устраивают, их фиксируют в трекере задач. Например, в Trello, Яндекс.Трекере или YouTrack.
-		.etaps-block__timeline.wow.fadeInRight(data-wow-duration="1s")
-			img(src="img/timeline.svg", alt="")
+		.etaps-block__timeline
+			.timeline
+				each i in timeline
+					- ;
+					.timeline__cyrcle
+						span=i
